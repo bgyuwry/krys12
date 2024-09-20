@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muros Interactivos Digitales</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #5C6BC0;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 2em;
+        }
+        section {
+            padding: 20px;
+        }
+        h2 {
+            color: #5C6BC0;
+        }
+        .subtema {
+            background-color: #e3f2fd;
+            border: 2px solid #5C6BC0;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .subtema:hover {
+            background-color: #bbdefb;
+        }
+        .contenido {
+            display: none;
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #5C6BC0;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
+    <script>
+        function toggleContenido(id) {
+            var contenido = document.getElementById(id);
+            if (contenido.style.display === "none") {
+                contenido.style.display = "block";
+            } else {
+                contenido.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    Los Muros Interactivos Digitales
+</header>
+
+<section>
+    <h2>Definición</h2>
+    <p>Un muro interactivo digital es una herramienta que utiliza múltiples recursos (texto, fotos, videos, gráficos) para comunicar información, organizada según las necesidades del público.</p>
+
+    <div class="subtema" onclick="toggleContenido('caracteristicas')">
+        <h3>Características</h3>
+    </div>
+    <div id="caracteristicas" class="contenido">
+        <ul>
+            <li>Sustentabilidad</li>
+            <li>Atractivo visual</li>
+            <li>Actualización en tiempo real</li>
+            <li>Interactividad con el usuario</li>
+            <li>Variedad de contenido</li>
+            <li>Gestión simple y práctica</li>
+        </ul>
+    </div>
+
+    <div class="subtema" onclick="toggleContenido('fases')">
+        <h3>Fases para la elaboración</h3>
+    </div>
+    <div id="fases" class="contenido">
+        <ol>
+            <li>Diseño y planificación del mural</li>
+            <li>Selección de la temática</li>
+            <li>Documentación y recopilación de contenido</li>
+            <li>Exploración de las herramientas digitales</li>
+            <li>Organización del trabajo en equipo</li>
+            <li>Publicación y exposición del mural</li>
+        </ol>
+    </div>
+
+    <div class="subtema" onclick="toggleContenido('herramientas')">
+        <h3>Herramientas recomendadas</h3>
+    </div>
+    <div id="herramientas" class="contenido">
+        <ul>
+            <li><strong>Jamboard:</strong> Pizarra virtual de Google para colaboración en tiempo real.</li>
+            <li><strong>Padlet:</strong> Herramienta intuitiva y multilingüe, ideal para proyectos colaborativos.</li>
+            <li><strong>Lino it:</strong> Excelente para integrar multimedia en murales interactivos.</li>
+            <li><strong>Mural.ly:</strong> Facilita la creación de murales visuales y la colaboración entre equipos.</li>
+        </ul>
+    </div>
+</section>
+
+<footer>
+    Creado por Reyes
+</footer>
+
+</body>
+</html>
